@@ -44,7 +44,7 @@ const ContactPage = (props) =>{
     const handleSubmit = (e) =>{
         e.preventDefault();
         if (state.email && state.message !== "") {
-            axios.post('http://127.0.0.1:8000/api/email/', state)
+            axios.post(pageInfo.domain + '/api/email/', state)
             .then(res=>{
                 console.log(res);
                 if (res.data === 'email_sent'){
