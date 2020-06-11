@@ -51,4 +51,3 @@ whitenoise==5.1.0
 wagtail==2.9
 sendgrid==6.3.1
 psycopg2==2.8.5
-django-cloudinary-storage==0.2.3
