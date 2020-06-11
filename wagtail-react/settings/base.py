@@ -35,7 +35,9 @@ INSTALLED_APPS = [
     'modelcluster',
     'taggit',
     'rest_framework',
-    'project'
+    'project',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -96,6 +98,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 WAGTAIL_SITE_NAME = 'wagtail-react'
 
+CLOUDINARY_STORAGE = {
+'CLOUD_NAME': config('CLOUD_NAME'),
+'API_KEY': config('API_KEY'),
+'API_SECRET': config('API_SECRET'),
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # CORS_ORIGIN_ALLOW_ALL = True
 
