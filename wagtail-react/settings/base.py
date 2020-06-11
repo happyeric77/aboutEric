@@ -107,6 +107,7 @@ CLOUDINARY_STORAGE = {
 }
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'core.staticfilesStorage.MyCustomManifestStaticFilesStorage'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 WAGTAIL_SITE_NAME = 'wagtail-react'
