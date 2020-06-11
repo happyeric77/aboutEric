@@ -95,7 +95,7 @@ function App() {
 
 
     return (
-        <div className='jumbotron p-0 m-0 text-white' style={{"background-image": `url(${pageInfo.background !== null ? pageInfo.domain + pageInfo.background.meta.download_url: "https://res.cloudinary.com/dydozrxhz/image/upload/v1591863327/media/images/pc-watch-mouse-dark_s0nebp.max-165x165_ifafid.jpg"})`, "background-repeat": "no-repeat", "background-position": "center", "background-size": "cover"}}>
+        <div className='jumbotron p-0 m-0 text-white' style={{"background-image": `url(${pageInfo.background !== null ? pageInfo.domain + pageInfo.background.meta.download_url: "https://res.cloudinary.com/dydozrxhz/image/upload/v1/media/images/pc-watch-mouse-dark_s0nebp.original_zeazfu"})`, "background-repeat": "no-repeat", "background-position": "center", "background-size": "cover"}}>
         <UserContext.Provider value={[api, setApi, pageInfo]}>
             <Router>
 
