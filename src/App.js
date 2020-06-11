@@ -11,7 +11,7 @@ import axios from "axios";
 function App() {
 
     useEffect(()=>{
-        axios.get('http://personal-porfolio.herokuapp.com/api/v2/pages/3/')
+        axios.get('https://personal-porfolio.herokuapp.com/api/v2/pages/3/')
             .then(res=>{
                 const updatedAppInfo = {
                     ...pageInfo,
