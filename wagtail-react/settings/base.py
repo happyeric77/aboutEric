@@ -16,7 +16,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
+    'cloudinary',
     'core',
     'corsheaders',
     'wagtail.contrib.forms',
@@ -36,8 +38,8 @@ INSTALLED_APPS = [
     'taggit',
     'rest_framework',
     'project',
-    'cloudinary',
-    'cloudinary_storage',
+
+
 ]
 
 MIDDLEWARE = [
