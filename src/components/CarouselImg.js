@@ -8,7 +8,7 @@ const CarouselImg = (props) => {
 
 
     useEffect(()=>{
-        axios.get('http://127.0.0.1:8000/api/v2/pages/4/')
+        axios.get('http://personal-porfolio.herokuapp.com/api/v2/pages/3/')
             .then(res=>{
                 const newApi = {...api, items: res.data.childPages};
                 setApi(newApi);
