@@ -19,7 +19,7 @@ def sendGridEmail(request):
     try:
         sg = SendGridAPIClient(config('SENDGRID_API_KEY'))
         response = sg.send(message)
-        print('Response status code: ' + response.status_code)
+        print('Response status code: ' + str(response.status_code))
         return HttpResponse('email_sent')
     except Exception as e:
         print('Error sending contact message: ' + str(e))
