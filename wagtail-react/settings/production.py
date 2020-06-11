@@ -1,7 +1,7 @@
 from .base import *
 from decouple import config
 import dj_database_url
-# DEBUG = config('DEBUG', cast=bool)
+DEBUG = config('DEBUG', cast=bool)
 
 DATABASES = {
     'default': dj_database_url.config(conn_max_age=600)
@@ -9,7 +9,6 @@ DATABASES = {
 
 
 
-DEBUG = True
 ALLOWED_HOSTS = ['personal-porfolio.herokuapp.com']
 
 
