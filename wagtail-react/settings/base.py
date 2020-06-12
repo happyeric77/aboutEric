@@ -113,4 +113,5 @@ WAGTAIL_SITE_NAME = 'wagtail-react'
 
 CORS_ORIGIN_WHITELIST = [
     "https://personal-porfolio.herokuapp.com",
+    "https://ericlee.cf",
 ]
