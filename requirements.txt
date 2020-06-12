@@ -8,7 +8,7 @@ constantly==15.1.0
 cryptography==2.9.2
 dj-database-url==0.5.0
 dj-static==0.0.6
-Django==2.2.12
+Django==3.0.4
 django-cogwheels==0.3
 django-cors-headers==3.2.1
 django-debug-toolbar==2.2
@@ -51,4 +51,4 @@ whitenoise==5.1.0
 wagtail==2.9
 sendgrid==6.3.1
 psycopg2==2.8.5
-django-cloudinary-storage==0.2.3
+dj3-cloudinary-storage==0.0.3
