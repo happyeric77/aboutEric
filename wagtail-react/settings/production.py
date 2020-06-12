@@ -10,7 +10,7 @@ DATABASES = {
 
 
 
-ALLOWED_HOSTS = ['personal-porfolio.herokuapp.com']
+ALLOWED_HOSTS = ['personal-porfolio.herokuapp.com', 'ericlee.cf']
 
 
 AUTH_PASSWORD_VALIDATORS = [
