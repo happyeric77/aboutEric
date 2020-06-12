@@ -21,7 +21,6 @@ urlpatterns = [
     path('pages/', include(wagtail_urls)),
     path('api/v2/', api_router.urls),
     path('api/email/', sendGridEmail),
-    # re_path('index/.*', TemplateView.as_view(template_name='index.html')),
     re_path(r'^index/(.)/$', TemplateView.as_view(template_name='index.html')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
