@@ -48,7 +48,7 @@ const CarouselImg = (props) => {
                         if (item.id === api.items[0].id){
                             return(
                                 <div className="carousel-item active" onClick={(e)=>{handleSelect(e, item)}}>
-                                    <img src={pageInfo.domain + item.download_url} className="d-block w-100" style={{"opacity": "0.7"}} alt="..."/>
+                                    <img src={item.download_url} className="d-block w-100" style={{"opacity": "0.7"}} alt="..."/>
                                     <div className="carousel-caption d-none d-md-block">
                                         <h1>{item.title}</h1>
                                         <button className="btn btn-outline-secondary" >See more</button>
@@ -57,7 +57,7 @@ const CarouselImg = (props) => {
                         )}else {
                             return (
                                 <div className="carousel-item" onClick={(e)=>{handleSelect(e, item)}}>
-                                    <img src={pageInfo.domain + item.download_url} className="d-block w-100" style={{"opacity": "0.7"}} alt="..."/>
+                                    <img src={item.download_url} className="d-block w-100" style={{"opacity": "0.7"}} alt="..."/>
                                     <div className="carousel-caption d-none d-md-block">
                                         <h1>{item.title}</h1>
                                         <button className="btn btn-outline-secondary" >See more</button>
